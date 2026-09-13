@@ -1,0 +1,30 @@
+뉴스 레이더 모바일 웹앱 배포
+
+1) GitHub에 새 저장소를 만들고 이 폴더의 내용 전체를 업로드합니다.
+   - streamlit_app.py
+   - requirements.txt
+   - .streamlit/config.toml
+   - .gitignore
+   - README.md
+   - secrets.toml.example
+   - DEPLOY_KR.txt
+
+2) Streamlit Community Cloud(share.streamlit.io)에 GitHub로 로그인합니다.
+
+3) Create app -> Yup, I have an app 을 선택합니다.
+   Repository: 방금 만든 GitHub 저장소
+   Branch: main
+   Main file path: streamlit_app.py
+
+4) Advanced settings -> Secrets에 아래를 입력합니다.
+   NAVER_CLIENT_ID = "실제_Client_ID"
+   NAVER_CLIENT_SECRET = "실제_Client_Secret"
+
+5) Deploy를 누릅니다.
+
+6) 생성된 https://xxxxx.streamlit.app 주소를 갤럭시 Chrome에서 엽니다.
+   Chrome 메뉴 -> 홈 화면에 추가 를 선택하면 홈 화면 아이콘으로 실행할 수 있습니다.
+
+주의:
+- 실제 API 키는 GitHub 파일에 절대 넣지 마세요.
+- secrets.toml.example은 예시일 뿐입니다.

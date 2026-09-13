@@ -1,0 +1,6 @@
+streamlit>=1.50,<2
+requests>=2.32
+pandas>=2.2
+python-dateutil>=2.9
+rapidfuzz>=3.9
+trafilatura>=1.12
