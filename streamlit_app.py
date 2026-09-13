@@ -1,3 +1,3 @@
-from news_radar_v2 import app
+from news_radar_v3 import app
 
 app()
