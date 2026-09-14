@@ -1,8 +1,11 @@
 name: Build AdShield APK
 
 on:
-  push:
-    branches: [ "adshield-apk-build" ]
+  pull_request:
+    branches: [ "main" ]
+    paths:
+      - "AdShieldBrowser/**"
+      - ".github/workflows/adshield-build.yml"
   workflow_dispatch:
 
 permissions:
